@@ -2,141 +2,172 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body{
     background-color: black;
 }
 
+.header {
+    width: 100vw;
+}
+
 .background{
-    width: 100%;
-    height: 600px;
+    width: 100vw;
+    height: 100vh;
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(header-image.png);
     background-size: cover;
 }
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 9rem;
+    width: 100vw;
+}
+
 .netflix-logo img{
     position: relative;
-    top: 25px;
-    left: 150px;
+    height: 2.5rem;
 }
+
+.nav-right {
+    display: flex;
+    gap: 1rem;
+}
+
 .language{
     display: flex;
-    position: relative;
-    left: 1120px;
-    bottom: 20px;
     border-radius: 4px;
-    height: 30px;
-    width: 120px;
-    border: 2px solid rgb(180, 175, 175);
+    border: 1px solid rgb(180, 175, 175);
+    padding: 0.3rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
 }
 .language-text{
-    position: relative;
-    top: 7px;
-    left: 19px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     color: white;
 }
 .language-arrow{
     font-size: 12px;
-    position: relative;
-    top: 10px;
-    left: 35px;
     color: white;
 }
 .language-logo{
-    position: relative;
-    top: 7px;
-    left: 10px;
     font-size: 15px;
     color: white;
 }
-.sign-in{
-    position: relative;
-    left: 1255px;
-    bottom: 53px;
-}
 .sign-in button{
+    padding: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
     border-radius: 3px;
     border: none;
-    height: 32px;
-    font-weight: bold;
-    width: 72px;
+    font-size: 0.8rem;
+    font-weight: 600;
     background-color: red;
     color: white;
 }
+.main-div {
+    width: 100vw;
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+}
 .bigdiv-first{
-    
-    position: relative;
-    top: 125px;
-    left: 300px;
-    height: 400px;
-    width: 900px;
-    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 700px;
+    text-align: center;
 }
 .input-text{
     font-weight: bolder;
     color: white;
     font-size: 30px;
-    position: relative;
-    left: 180px;
 }
 .input-text-second{
     font-weight: bolder;
     color: white;
     font-size: 30px;
-    position: relative;
-    left: 160px;
 }
 .input-text-third{
     font-weight: 700;
     color: white;
     font-size: 22px;
-    position: relative;
-    top: 20px;
-    left: 270px;
 }
 .input-text-fourth{
     font-weight: 300;
     font-size: 16px;
     color: white;
-    position: relative;
-    top: 50px;
-    left: 185px;
 }
+
 .input-mail{
     display: flex;
+    width: 100%;
+    gap: 0.5rem;
+    padding: 1rem;
+    padding-top: 0;
 }
-.input-mail-text input{
-    padding-left: 10px;
-    font-size: 20px;
+.input-mail input{
+    padding: 1rem;
+    font-size: 1.2rem;
     color: white;
     border: 1px solid white;
     background-color: transparent;
     border-radius: 5px;
-    height: 50px;
-    width: 350px;
-    position: relative;
-    top: 70px;
-    left: 160px;
+    width: 70%;
 }
-.input-button button{
+.input-mail button{
+    width: 30%;
     font-size: 22px;
     border: none;
     font-weight: bold;
     color: white;
     background-color: red;
-    width: 176px;
-    height: 56px;
     border-radius: 5px;
-    position: relative;
-    top: 68px;
-    left: 170px;
 }
 
-.middle{
-    height: 10px;
-    width: 100vw;
-    background: linear-gradient(90deg,#6A1A3E,#DC1026,#6A1A3E);
-    border-radius: 50%/100px 100px 0 0;
+.main {
+    position: relative;
+    height: 50vh;
+}
+
+.main .line {
+    position: absolute;
+    top: -100px;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    height: 100px;
+    width: 150%;
+    left: -25%;
+    background-color: red;
+    z-index: 1;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: -98px;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    height: 100px;
+    width: 150%;
+    left: -25%;
+    background-color: black;
+    z-index: 2;
+}
+
+.main2 {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+    height: 6.25rem;
+    z-index: 1;
 }
