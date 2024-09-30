@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.background{
+    width: 100%;
+    height: 600px;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(header-image.png);
+    background-size: cover;
+}
+.netflix-logo img{
+    position: relative;
+    top: 25px;
+    left: 150px;
+}
+.language{
+    display: flex;
+    position: relative;
+    left: 1120px;
+    bottom: 20px;
+    border-radius: 4px;
+    height: 30px;
+    width: 120px;
+    border: 2px solid rgb(180, 175, 175);
+}
+.language-text{
+    position: relative;
+    top: 7px;
+    left: 19px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+.language-arrow{
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+    left: 35px;
+    color: white;
+}
+.language-logo{
+    position: relative;
+    top: 7px;
+    left: 10px;
+    font-size: 15px;
+    color: white;
+}
+.sign-in{
+    position: relative;
+    left: 1255px;
+    bottom: 53px;
+}
+.sign-in button{
+    border-radius: 3px;
+    border: none;
+    height: 32px;
+    font-weight: bold;
+    width: 72px;
+    background-color: red;
+    color: white;
+}
+.bigdiv-first{
+    
+    position: relative;
+    top: 125px;
+    left: 300px;
+    height: 400px;
+    width: 900px;
+    /* border: 2px solid white; */
+}
+.input-text{
+    font-weight: bolder;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 180px;
+}
+.input-text-second{
+    font-weight: bolder;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 160px;
+}
+.input-text-third{
+    font-weight: 700;
+    color: white;
+    font-size: 22px;
+    position: relative;
+    top: 20px;
+    left: 270px;
+}
+.input-text-fourth{
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    top: 50px;
+    left: 185px;
+}
+.input-mail{
+    display: flex;
+}
+.input-mail-text input{
+    padding-left: 10px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 5px;
+    height: 50px;
+    width: 350px;
+    position: relative;
+    top: 70px;
+    left: 160px;
+}
+.input-button button{
+    font-size: 22px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    width: 176px;
+    height: 56px;
+    border-radius: 5px;
+    position: relative;
+    top: 68px;
+    left: 170px;
+}
+
+.middle{
+    height: 10px;
+    width: 100vw;
+    background: linear-gradient(90deg,#6A1A3E,#DC1026,#6A1A3E);
+    border-radius: 50%/100px 100px 0 0;
+}
